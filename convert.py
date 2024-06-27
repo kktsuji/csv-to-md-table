@@ -24,7 +24,6 @@ def convert_csv_to_markdown_table(csv_file_path):
         csv_reader = csv.reader(csv_file)
         headers = next(csv_reader)
         # Create the header row
-        print(headers)
         markdown_table += "| " + " | ".join(headers) + " |\n"
         # Create the separator row
         markdown_table += "|---" * len(headers) + "|\n"
